@@ -1,0 +1,280 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Đảm bảo footer luôn ở cuối trang */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: #0779e4 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    display: flex; /* Sắp xếp các mục menu theo hàng ngang */
+    align-items: center; /* Căn giữa các mục menu theo chiều dọc */
+}
+
+header li {
+    margin-right: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #0779e4;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ccc;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #0779e4;
+    color: white;
+    border: 1px solid #0779e4;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Main content area */
+main {
+    flex-grow: 1; /* Đảm bảo nội dung chính chiếm không gian còn lại */
+    padding: 20px 0;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    /* position: fixed; /* Hoặc sticky tùy theo yêu cầu chính xác */
+    /* bottom: 0; */
+    /* width: 100%; */
+    margin-top: auto; /* Đẩy footer xuống dưới cùng */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Utility Classes */
+.btn {
+    display: inline-block;
+    background: #0779e4;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Specific page styling - Add more as needed */
+
+/* Trang chủ */
+.hero {
+    background: #0779e4;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.features, .featured-jobs, .featured-companies {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.features .feature, .job-listing, .company-listing {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Trang đăng ký / đăng nhập */
+.auth-form {
+    background: #fff;
+    padding: 30px;
+    max-width: 500px;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Trang thông tin cá nhân / CV */
+.profile-container, .cv-form-container, .company-form-container {
+    background: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+/* Trang tìm việc / tuyển người */
+.search-filters {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.search-filters .form-group {
+    display: inline-block; /* Hoặc sử dụng flexbox/grid cho layout phức tạp hơn */
+    margin-right: 15px;
+}
+.search-filters .form-group:last-child {
+    margin-right: 0;
+}
+.search-filters button {
+    margin-top: 10px; /* Hoặc căn chỉnh theo thiết kế */
+}
+
+.job-card, .candidate-card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.job-card h3, .candidate-card h3 {
+    margin-top: 0;
+    color: #0779e4;
+}
+
+/* Trang thanh toán */
+.payment-form {
+    background: #fff;
+    padding: 30px;
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

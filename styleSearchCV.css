@@ -1,0 +1,236 @@
+
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e2533;
+      color: white;
+      padding: 2rem;
+    }
+
+    .breadcrumbs {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      color: #cbd5e1;
+    }
+
+    .search-bar {
+      display: flex;
+      margin-top: 1rem;
+      width: 80%;
+      padding-left: 10%;
+    }
+
+    .search-bar input {
+      flex: 1;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 4px 0 0 4px;
+      height: 40px;
+    }
+
+    .search-bar button {
+      padding: 0.5rem 1rem;
+      background-color: orange;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+
+    .content {
+      display: flex;
+      padding: 1.5rem;
+    }
+
+    .sidebar {
+      width: 280px;
+      background-color: #ffffff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .sidebar h3 {
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+      color: #111827;
+      font-weight: 600;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+    }
+
+    .filter-item {
+      margin-bottom: 2rem;
+    }
+
+    .filter-title {
+      color: #374151;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .filter-options {
+      padding-left: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .filter-options div {
+      margin-bottom: 0.5rem;
+    }
+
+    .filter-options label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.95rem;
+      color: #4b5563;
+      background-color: #f9fafb;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      transition: background 0.2s ease;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+
+    .filter-options label:hover {
+      background-color: #eef2f7;
+    }
+
+    .label-left {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex: 1;
+    }
+
+    .filter-options input {
+      accent-color: #2563eb;
+    }
+
+    .count {
+      color: #9ca3af;
+      font-size: 0.85rem;
+      min-width: 30px;
+      text-align: right;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 1rem 0;
+    }
+
+    .projects {
+      flex: 1;
+      padding-left: 2rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .freelancer-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .freelancer-card .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .freelancer-card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .freelancer-card .desc {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+
+    .freelancer-card .location {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 0.5rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .tags span {
+      background-color: #e5e7eb;
+      padding: 0.3rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+
+    .footer .rating {
+      color: #f59e0b;
+    }
+
+    .footer .cert {
+      background-color: #fcd34d;
+      color: #111;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+    }
+
+    .footer .price {
+      font-weight: bold;
+    }
+  .freelancer-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.freelancer-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.freelancer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+
+
