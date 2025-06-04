@@ -5,19 +5,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Freelancer Profile</title>
-    <link rel="stylesheet" href="profile.css" />
+    <title>My Profile</title>
+    <link rel="stylesheet" href="profilest.css" />
   </head>
   <body>
     <div class="layout">
       <aside class="sidebar">
         <div class="logo" style="margin-bottom: 2rem">
-          <a href="#" class="logo-link">
+          <a href="home.html" class="logo-link">
             STJobs<span class="logo-dot">.</span>
           </a>
         </div>
         <nav class="sidebar-menu">
-          <a href="#" style="font-weight: bold">Dashboard</a>
+          <a href="dashBoard.html" style="font-weight: bold">Dashboard</a>
           <a href="#" style="font-weight: bold">Calendar</a>
           <div class="dropdown">
             <button
@@ -29,8 +29,8 @@
             </button>
             <div class="dropdown-menu">
               <a href="#">My Profile</a>
-              <a href="#">Freelancers</a>
-              <a href="#">Companies</a>
+              <a href="#">Students</a>
+              <a href="#">Business</a>
             </div>
           </div>
           <div class="dropdown">
@@ -42,12 +42,12 @@
               Customer Management ▾
             </button>
             <div class="dropdown-menu">
-              <a href="#">Freelancers</a>
-              <a href="#">Companies</a>
+              <a href="userManage.html">Students</a>
+              <a href="userManage.html">Business</a>
             </div>
           </div>
-          <a href="#" style="font-weight: bold">Project Management</a>
-          <a href="#" style="font-weight: bold">Applications</a>
+          <a href="JobManage.html" style="font-weight: bold">Project Management</a>
+          <a href="" style="font-weight: bold">Applications</a>
           <a href="#" style="font-weight: bold">Payments</a>
           <a href="#" style="font-weight: bold">Reviews & Reports</a>
           <a href="#" style="font-weight: bold">System Settings</a>
@@ -56,11 +56,11 @@
 
       <main class="main">
         <div class="topbar">
-          <h1>Freelancers Profile</h1>
+          <h1>My Profile</h1>
           <input type="text" placeholder="Search freelancer..." />
           <div class="breadcrumb">
             <span>Profile</span> /
-            <span class="current">Freelancers</span>
+            <span class="current">My Profile</span>
           </div>
           <div class="user-info">
             <div>
@@ -71,107 +71,45 @@
           </div>
         </div>
 
-        <div class="freelancer-grid">
-          <!-- Freelancer 1 -->
-          <div class="freelancer-card">
-            <section class="profile-header">
-              <img
-                src="https://i.pravatar.cc/100?img=1"
-                alt="Avatar"
-                class="avatar-large"
-              />
-              <div class="basic-info">
-                <h2>Emily Tran</h2>
-                <p>
-                  Status: <span class="status-active">Available for work</span>
-                </p>
-                <p>📍 Ho Chi Minh City, Vietnam</p>
-              </div>
-            </section>
-            <section class="profile-section">
-              <h3>Personal Information</h3>
-              <ul>
-                <li><strong>Full Name:</strong> Emily Tran</li>
-                <li><strong>Date of Birth:</strong> Jan 12, 1996</li>
-                <li><strong>Gender:</strong> Female</li>
-                <li><strong>Country:</strong> Vietnam</li>
-                <li><strong>Address:</strong> 123 Nguyen Hue, District 1</li>
-                <li><strong>Phone:</strong> +84 123456789</li>
-                <li><strong>Email:</strong> emily@mail.com</li>
-              </ul>
-            </section>
+        <div class="admin-profile">
+          <section class="profile-section">
+            <h2>Personal Information</h2>
+            <ul>
+              <li><strong>Full Name:</strong> Thomas Anree</li>
+              <li><strong>Email:</strong> admin@stjobs.com</li>
+              <li><strong>Phone:</strong> +84 987654321</li>
+              <li><strong>Role:</strong> Administrator</li>
+              <li><strong>Joined:</strong> Jan 5, 2022</li>
+            </ul>
+          </section>
 
-            <section class="profile-section">
-              <h3>Education & Qualifications</h3>
-              <ul>
-                <li>Bachelor of Graphic Design - FPT University (2014–2018)</li>
-                <li>UX Certification - Coursera (2022)</li>
-              </ul>
-            </section>
+          <section class="profile-section">
+            <h2>System Information</h2>
+            <ul>
+              <li><strong>Total Users Managed:</strong> 1250</li>
+              <li><strong>System Access Level:</strong> Super Admin</li>
+              <li><strong>Last Login:</strong> May 28, 2025, 07:00 AM</li>
+            </ul>
+          </section>
 
-            <section class="profile-section">
-              <h3>Work Experience</h3>
-              <ul>
-                <li>Senior UI/UX Designer at ABC Studio (2019–2023)</li>
-                <li>Freelance Designer for startups and NGOs</li>
-              </ul>
-            </section>
+          <section class="profile-section">
+            <h2>Activity Logs</h2>
+            <ul>
+              <li>✅ Reviewed 15 project applications this week</li>
+              <li>✅ Updated system settings</li>
+              <li>✅ Banned 2 users for policy violations</li>
+            </ul>
+          </section>
 
-            <section class="profile-section">
-              <h3>Hard Skills</h3>
-              <ul class="skill-list">
-                <li>Figma</li>
-                <li>Adobe XD</li>
-                <li>HTML/CSS</li>
-              </ul>
-            </section>
-
-            <section class="profile-section">
-              <h3>Soft Skills</h3>
-              <ul class="skill-list">
-                <li>Teamwork</li>
-                <li>Communication</li>
-                <li>Time Management</li>
-              </ul>
-            </section>
-
-            <section class="profile-section">
-              <h3>Project Categories</h3>
-              <p>Web Design, App UI/UX, E-learning Platforms, NGO Campaigns</p>
-            </section>
-
-            <section class="profile-section">
-              <h3>Pricing & Working Method</h3>
-              <p>💰 $20/hour or fixed price depending on project scope.</p>
-              <p>🧑‍💻 Remote, flexible working hours.</p>
-            </section>
-
-            <section class="profile-section">
-              <h3>Work Availability</h3>
-              <p>Monday - Friday: 9AM - 6PM</p>
-            </section>
-
-            <section class="profile-section">
-              <h3>Services Provided</h3>
-              <ul>
-                <li>UI/UX Design</li>
-                <li>Wireframing</li>
-                <li>Prototyping</li>
-                <li>Design Consultation</li>
-              </ul>
-            </section>
-
-            <section class="profile-section">
-              <h3>Ratings & Certificates</h3>
-              <p>⭐ 4.8/5 (Based on 50+ reviews)</p>
-              <p>🏅 Certified UX Specialist – Coursera</p>
-            </section>
-          </div>
-
-        
-
-          
-          </div>
+          <section class="profile-section">
+            <h2>Security Settings</h2>
+            <ul>
+              <li><strong>Password Last Changed:</strong> Mar 15, 2025</li>
+              <li><strong>Two-Factor Auth:</strong> Enabled</li>
+              <li><strong>Session Timeout:</strong> 30 minutes</li>
+            </ul>
+            <button class="action-btn">🔐 Update Security Settings</button>
+          </section>
         </div>
       </main>
     </div>

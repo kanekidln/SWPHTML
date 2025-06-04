@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>STJobs Admin</title>
-    <link rel="stylesheet" href="adminst.css" />
+    <link rel="stylesheet" href="userManagest.css" />
   </head>
   <body>
     <div class="layout">
@@ -58,7 +58,12 @@
       <main class="main">
         <!-- Top bar -->
         <div class="topbar">
-          <input type="text" placeholder="Search..." />
+          <h1>Freelancer Management</h1>
+          <input type="text" placeholder="Search freelancer..." />
+          <div class="breadcrumb">
+            <span>Customer Management</span> /
+            <span class="current">Freelancers</span>
+          </div>
           <div class="user-info">
             <div>
               <p class="user-name">Thomas Anree</p>
@@ -68,41 +73,42 @@
           </div>
         </div>
 
-        <!-- Stats Cards -->
-        <div class="cards">
-          <div class="card">
-            <p class="title">Total views</p>
-            <h2 class="value">$3.456K</h2>
-            <p class="trend-up">+0.43%</p>
-          </div>
-          <div class="card">
-            <p class="title">Total Profit</p>
-            <h2 class="value">$45.2K</h2>
-            <p class="trend-up">+4.35%</p>
-          </div>
-          <div class="card">
-            <p class="title">Total Product</p>
-            <h2 class="value">2,450</h2>
-            <p class="trend-up">+2.59%</p>
-          </div>
-          <div class="card">
-            <p class="title">Total Users</p>
-            <h2 class="value">3,456</h2>
-            <p class="trend-down">-0.95%</p>
-          </div>
-        </div>
-
-        <!-- Chart Cards -->
-        <div class="charts">
-          <div class="card chart-card">
-            <p class="title">Total Revenue & Sales</p>
-            <div class="placeholder-chart">[Chart Placeholder]</div>
-          </div>
-          <div class="card chart-card">
-            <p class="title">Profit this week</p>
-            <div class="placeholder-chart">[Bar Chart Placeholder]</div>
-          </div>
-        </div>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Skills</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Emily Tran</td>
+              <td>emily@mail.com</td>
+              <td>UI/UX Design, Figma</td>
+              <td class="status-active">Active</td>
+              <td>
+                <button class="action-btn edit">✏️ Edit</button>
+                <button class="action-btn delete">❌ Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Nam Le</td>
+              <td>namle@mail.com</td>
+              <td>ReactJS, Node.js</td>
+              <td class="status-inactive">Inactive</td>
+              <td>
+                <button class="action-btn edit">✏️ Edit</button>
+                <button class="action-btn delete">❌ Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </main>
     </div>
     <script>
