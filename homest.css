@@ -43,6 +43,23 @@ body {
     color: #354F6C;
     border: 2px solid #354F6C;
 }
+.category-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.category-link:hover {
+  text-decoration: none;
+}
+
+/* Optional: hover effect */
+.category-link:hover .category-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
 
 .btn-primary:hover {
     background-color: #031F4A;
