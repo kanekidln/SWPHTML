@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="loginst.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="login-box"> 
+      <h1 class="brand-title">STJob</h1>
+
+      <form>
+        <h3>Register Here</h3>
+
+        <div class="input-group account">
+          <input type="text" placeholder="FULL NAME" required>
+          <span class="icon"><i class="fas fa-user"></i></span>
+        </div>
+
+        <div class="input-group account">
+          <input type="email" placeholder="EMAIL" required>
+          <span class="icon"><i class="fas fa-envelope"></i></span>
+        </div>
+
+        <div class="input-group account">
+          <input type="password" placeholder="PASSWORD" required>
+          <span class="icon"><i class="fas fa-lock"></i></span>
+        </div>
+
+        <div class="input-group account">
+          <input type="password" placeholder="CONFIRM PASSWORD" required>
+          <span class="icon"><i class="fas fa-lock"></i></span>
+        </div>
+
+        <!-- Role selection -->
+        <div class="input-group account">
+          <select required>
+            <option value="" disabled selected>Select Role</option>
+            <option value="student">Student</option>
+            <option value="business">Business</option>
+          </select>
+          <span class="icon"><i class="fas fa-user-tag"></i></span>
+        </div>
+
+        <button type="submit" class="btn-login">Register</button>
+
+        <p class="register">Already have an account? → <a href="login.html">Login Here</a></p>
+
+        
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
